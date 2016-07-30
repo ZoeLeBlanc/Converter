@@ -2,24 +2,29 @@
 <html>
 <head>
 	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
 	<h1>Temperature Converter</h1>
 </header><!-- /header -->
-
-<input type="number" name="user_temp" placeholder="Enter a temperature">
-<input type="radio" name="celsius">Celsius
-<input type="radio" name="fahrenheit">Fahrenheit
-<div id="inputtemp">
-	
+<div class="form">
+<input type="text" name="userTemp" id="userTemp" placeholder="Enter a temperature" onkeypress="JavaScript: if (event.keyCode === 13) determineConverter();">
+<div class="radio">
+<input type="radio" name="celsius" id="celsius">Celsius
+<input type="radio" name="fahrenheit" id="fahrenheit">Fahrenheit
 </div>
 <button type="submit" id="converter">Press to Convert Temperature</button>
+</div>
+<div id="inputTemp">
+	
+</div>
+<div class="clear">
 <button type="submit" id="cleartemp">Clear Temperatures</button>
-
-
-</body>
+</div>
 <script src="converter.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
 </html>
 <!-- Write a program that will convert a temperature from fahrenheit to celsius, or from celsius to fahrenheit.
 
