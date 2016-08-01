@@ -54,3 +54,12 @@ input[type="radio"] {
 	margin-right: auto;
 	margin-left: auto;
 }
+.lightpink {
+	background-color: lightpink;
+}
+.lightblue {
+	background-color: lightblue;
+}
+.lightgreen {
+	background-color: lightgreen;
+}

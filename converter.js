@@ -23,11 +23,11 @@ function determineConverter (clickEvent) {
 		var tempCelsius = toCelsius(userTemp.value);
 		inputTemp.innerHTML = tempCelsius;
 		if (tempCelsius > 32) {
-			inputTemp.style.backgroundColor = "lightpink";
+			inputTemp.className = "lightpink";
 		} else if (tempCelsius < 0) {
-			inputTemp.style.backgroundColor = "lightblue";
+			inputTemp.className = "lightblue";
 		} else {
-			inputTemp.style.backgroundColor = "lightgreen";
+			inputTemp.className = "lightgreen";
 		}
 	} else if (document.getElementById("fahrenheit").checked) {
 		var tempFahrenheit = toFahrenheit(userTemp.value);
@@ -60,11 +60,8 @@ function onClick (userTemp) {
 function clearConverter (clickEvent){
 		inputTemp.innerHTML = "";
 		userTemp.value = "";
-		if (document.getElementById("celsius").checked) {
-			document.getElementById("celsius").checked = false;
-		} else {
-			document.getElementById("fahrenheit").checked = false;
-		}
+		document.getElementById("celsius").checked = false;
+		document.getElementById("fahrenheit").checked = false;
 		inputTemp.style.backgroundColor = "white";
 		console.log("click", clickEvent);
 }
