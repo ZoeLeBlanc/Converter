@@ -33,11 +33,11 @@ function determineConverter (clickEvent) {
 		var tempFahrenheit = toFahrenheit(userTemp.value);
 		inputTemp.innerHTML = tempFahrenheit;
 		if (tempFahrenheit > 90) {
-			inputTemp.style.backgroundColor = "lightpink";
+			inputTemp.className = "lightpink";
 		} else if (tempFahrenheit < 32) {
-			inputTemp.style.backgroundColor = "lightblue";
+			inputTemp.className = "lightblue";
 		} else {
-			inputTemp.style.backgroundColor = "lightgreen";
+			inputTemp.className = "lightgreen";
 		}
 	} else {
 		alert("Choose a degree");
