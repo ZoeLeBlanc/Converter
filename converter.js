@@ -62,7 +62,7 @@ function clearConverter (clickEvent){
 		userTemp.value = "";
 		document.getElementById("celsius").checked = false;
 		document.getElementById("fahrenheit").checked = false;
-		inputTemp.style.backgroundColor = "white";
+		inputTemp.className = "white";
 		console.log("click", clickEvent);
 }
 
